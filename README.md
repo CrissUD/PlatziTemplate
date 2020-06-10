@@ -15,7 +15,7 @@ Dentro del curso se implementan varias características tanto en HTML como en CS
 
 # Resultado
 
-A continuación se muestra el resultado de la replica del Landing de cursos de Platzi, si quiere ver la pagina por usted mismo puede entrar al [siguiente link](https://crissud.github.io/PinterestTemplate/index.html).
+A continuación se muestra el resultado de la replica del Landing de cursos de Platzi, si quiere ver la pagina por usted mismo puede entrar al [siguiente link](https://crissud.github.io/PlatziTemplate/).
 
 <div align='center'>
     <img  src='https://i.imgur.com/0IhuN6p.png'>
