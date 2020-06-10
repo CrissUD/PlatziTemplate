@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* ------------------------------------------ VARIABLES ------------------------------------------ */
+:root{
+    --color-dark-blue: #254253;
+    --color--green: #87C739;
+    --color--gray: #e9e9e9;
+    --color-white: #fff;
+}
+/* ------------------------------------------ REGLAS GENERALES ------------------------------------------ */
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+figure{
+    margin: 0;
+}
+/* ------------------------------------------ REGLAS HEADER ------------------------------------------ */
+header{
+    height: 42px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto 20px;
+    background: var(--color-dark-blue);
+    box-shadow: 2px 13px 11px -4px rgba(40,40,40,0.75);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    cursor: pointer;
+}
+
+.div-logo-page img{
+    width: 80px;
+    margin: auto 20px;
+}
+
+.nav-search{
+    height: inherit;
+    margin: auto 15px;
+}
+
+nav{
+    margin: auto 10px;
+    border-right: solid 1px var(--color-white);
+    height: 55%;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+header a{
+    margin: auto 5px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+nav a:hover{
+    color: #ddd;
+}
+
+.profile-info{
+    padding: 10px;
+}
+
+.profile-info img{
+    width: 20px;
+    margin: auto 10px;
+}
+
+.profile-info a{
+    font-size: 12px;
+}
+
+.div-search img{
+    width: 15px;
+}
+
+.div-search input{
+    border: 1px solid var(--color--gray);
+    border-radius: 6px 0 0 6px;
+    width: 190px;
+    height: 25px;
+    font-size: 11px;
+}
+
+.div-search span{
+    background-color: var(--color--green);
+    border-radius: 0 6px 6px 0;
+    padding: 5px 12px;
+}
+/* ------------------------------------------ REGLAS HERO ------------------------------------------ */
+.hero{
+    background: var(--color-dark-blue);
+    padding-top: 130px;
+    width: 100vw;
+    color: var(--color-white);
+}
+
+.div-hero{
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 100px 1fr 340px;
+    grid-template-areas: "badge title form" ". description form" ". countdown form";
+}
+
+.badge{
+    grid-area: badge;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.badge img{
+    width: 100%;
+}
+
+.title{
+    grid-area: title;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.description{
+    grid-area: description;
+}
+
+.form{
+    grid-area: form;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    padding: 24px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.form input{
+    width: 90%;
+    font-size: 16px;
+    border: 1px solid var(--color--gray);
+    height: 32px;
+    margin: 10px auto;
+}
+
+.form p{
+    font-size: 20px;
+    color: #3a3b3f;
+}
+
+.form button{
+    cursor: pointer;
+    margin-top: 20px;
+    background: var(--color--green);
+    color: var(--color-white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border-bottom: 5px solid #6d932b;
+    display: inline-block;
+}
+
+.countdown{
+    grid-area: countdown;
+}
+
+.countdown p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.countdown span{
+    font-size: 32px;
+}
+
+.countdown span:after{
+    content: ":";
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.countdown span:last-child:after{
+    display: none;
+}
+
+/* ------------------------------------------ REGLAS RESPONSIVE ------------------------------------------ */
+footer{
+    background: var(--color-dark-blue);
+    color: var(--color-white);
+    font-size: 13px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.container div{
+    width: 310px;
+}
+
+.logo{
+    width: 120px;
+}
+
+.logos-red{
+    display: flex;
+}
+
+.logos-red img{
+    width: 25px;
+    margin-right: 15px;
+}
+
+.sections li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.sections li span{
+    margin-right: 10px;
+}
+
+.sections li:nth-of-type(1) span{
+    border-left: 2px solid #33B13A;
+}
+
+.sections li:nth-of-type(2) span{
+    border-left: 2px solid #6B407E;
+}
+
+.sections li:nth-of-type(3) span{
+    border-left: 2px solid #29B8E8;
+}
+
+.sections li:nth-of-type(4) span{
+    border-left: 2px solid #F5C443;
+}
+
+.sections li:nth-of-type(5) span{
+    border-left: 2px solid #FA7800;
+}
+
+.sections li:nth-of-type(6) span{
+    border-left: 2px solid #CB161D;
+}
+
+.sections a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.certifications div{
+    display: flex;
+    justify-content: center;
+}
+
+.certifications img{
+    width: 80px;
+    margin-right: 20px;
+}
+
+
+/* ------------------------------------------ REGLAS RESPONSIVE ------------------------------------------ */
+@media (max-width:550px){
+    nav{
+        display: none;
+    }
+    .div-search input{
+        display: none;
+    }
+    .div-search span{
+        background: none;
+    }
+    .div-hero{
+        grid-template-columns: 100px 1fr;
+        grid-template-areas: "badge title" "description description" "form form" "countdown countdown";
+    }
+
+    .div-hero{
+        margin: 120px 30px;
+    }
+}
+
+@media (min-width:551px) and (max-width:800px){
+    .div-search input{
+        display: none;
+    }
+    .div-search span{
+        background: none;
+    }
+
+    .div-hero{
+        grid-template-columns: 100px 1fr;
+        grid-template-areas: "badge title" "description description" "form form" "countdown countdown";
+    }
+
+    .div-hero{
+        margin: 120px 30px;
+    }
+}
+
+@media (min-width:801px) and (max-width:1024px){
+    .div-hero{
+        margin: 120px 30px;
+    }
+}
